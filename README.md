@@ -1,5 +1,5 @@
 # Ethnic Disparities in Adverse Drug Events Among Adults Prescribed Atorvastatin  
-*Trusted Research Environment (TRE) – Code-Only Repository*
+
 
 ---
 
