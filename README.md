@@ -7,7 +7,7 @@
 This repository contains **R scripts, configuration files, and documentation** for the project:
 
 > **“Ethnic Disparities in Adverse Drug Events Among Adults Prescribed Atorvastatin”**  
-> A retrospective cohort study using CPRD Aurum linked with Hospital Episode Statistics (HES) APC,  
+> A retrospective cohort study using CPRD Aurum linked with Hospital Episode Statistics (HES) APC  
 >  and Index of Multiple Deprivation (IMD) data.
 
 The project explores how **ethnicity and clinical factors** influence the risk of adverse drug events (ADEs)  
@@ -33,7 +33,7 @@ All folders are created automatically by the setup script `00_setup_project.R`.
 
 ---
 
-## 🧩 Analysis Pipeline
+## 📈 Analysis Pipeline
 The analysis follows a structured sequence of numbered scripts:
 
 1. **00_setup_project.R** — create folder structure & initialise local Git repo  
@@ -52,10 +52,12 @@ The analysis follows a structured sequence of numbered scripts:
 
 ---
 
-## 🧠 Key Variables
+## 📊  Key Variables
 - **Exposure:** Atorvastatin initiation (first prescription between 2014–2023)  
-- **Covariates:** Ethnicity, age, sex, IMD quintile, smoking, alcohol, BMI, polypharmacy, Cambridge Multimorbidity Score  
-- **Outcomes:** Myopathy, hepatotoxicity, AKI, new-onset T2DM, cognitive impairment, falls, fractures  
+- **Covariates:** Ethnicity, age, sex, IMD quintile, smoking, alcohol, BMI, polypharmacy, Cambridge Multimorbidity Score and healthcare utilisation
+- **Outcomes:** Categorised in two groups:  
+  - *Short-term ADEs:* Myopathy, rhabdomyolysis, Creatinine Kinase (CK) elevation >3x ULN, AKI, Statin Intolerance, Hepatotoxicity  
+  - *Long term ADEs:* New-onset of type 2 diabetes, Cognitive Impairment, Falls, Fractures, CKD Progression renal and mortality
 
 ---
 
@@ -68,7 +70,7 @@ All scripts are designed for **offline use** within the TRE and comply with CPRD
 
 ---
 
-## 🧰 Dependencies
+## ⏳ Dependencies
 The analysis uses **base R (≥4.3)** and the following CRAN packages:
 
 `tidyverse`, `data.table`, `lubridate`, `arrow`, `survival`, `broom`, `janitor`, `here`, `yaml`
