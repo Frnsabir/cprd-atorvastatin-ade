@@ -79,11 +79,3 @@ No external API calls or internet dependencies are required.
 
 ---
 
-## 🧑‍💻 Version Control
-A local Git repository is initialised automatically by `00_setup_project.R` for safe offline version tracking.  
-When code is exported and approved for release, connect to GitHub manually:
-
-```bash
-git remote add origin https://github.com/<username>/cprd-atorvastatin-ade.git
-git branch -M main
-git push -u origin main
